@@ -1,0 +1,70 @@
+9
+
+dir
+0
+https://svn.codespaces.com/tadashi/ecomm/magento.local.com/app/design/frontend/tadashi/elegant/template/page
+https://svn.codespaces.com/tadashi/ecomm
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+74974a33-9bfe-4a83-8e71-17a0a5aaef5e
+
+1column.phtml
+file
+
+
+
+add
+
+2columns-left.phtml
+file
+
+
+
+add
+
+2columns-right.phtml
+file
+
+
+
+add
+
+3columns.phtml
+file
+
+
+
+add
+
+html
+dir
+
+
+
+add
+
+ie
+dir
+
+
+
+add
+

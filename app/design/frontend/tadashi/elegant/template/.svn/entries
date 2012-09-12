@@ -1,0 +1,112 @@
+9
+
+dir
+0
+https://svn.codespaces.com/tadashi/ecomm/magento.local.com/app/design/frontend/tadashi/elegant/template
+https://svn.codespaces.com/tadashi/ecomm
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+74974a33-9bfe-4a83-8e71-17a0a5aaef5e
+
+catalog
+dir
+
+
+
+add
+
+catalogsearch
+dir
+
+
+
+add
+
+checkout
+dir
+
+
+
+add
+
+colorselectorplus
+dir
+
+
+
+add
+
+directory
+dir
+
+
+
+add
+
+facebooklb
+dir
+
+
+
+add
+
+magiczoomplus
+dir
+
+
+
+add
+
+newsletter
+dir
+
+
+
+add
+
+page
+dir
+
+
+
+add
+
+sociallinks
+dir
+
+
+
+add
+
+tag
+dir
+
+
+
+add
+
+wishlist
+dir
+
+
+
+add
+

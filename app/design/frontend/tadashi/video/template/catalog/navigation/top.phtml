@@ -1,0 +1,159 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Catalog_Block_Navigation
+ */
+?>
+<?php
+/**
+ * $this->renderCategoriesMenuHtml() supports optional arguments:
+ * int Level number for list item class to start from
+ * string Extra class of outermost list items
+ * string If specified wraps children list in div with this class
+ */
+?>
+<!--- RUBEN original navigation menu
+
+<?php $_menu = $this->renderCategoriesMenuHtml(0,'level-top') ?>
+<?php if($_menu): ?>
+<div class="nav-container">
+    <div class="page">
+        <ul id="nav">
+            <?php echo $_menu ?>
+        </ul>
+    </div>
+</div>
+<?php endif ?>
+-->
+
+<div class="nav-container">
+    <div class="page">
+        <ul id="nav">
+            <li class="nav-main">
+                <a href="#">
+                    <span>Shop</span>
+                </a>
+                <ul class="nav-main-sub">
+                    <li class="nav-main-category">
+                        <a href="http://shop.tadashishoji.com/evening-shop.html" class="">
+                            <span>EVENING SHOP</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category">
+                        <a href="http://shop.tadashishoji.com/evening-shop/cocktail-dresses.html" class="">
+                            <span>Cocktail Dresses</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category-last">
+                        <a href="http://shop.tadashishoji.com/evening-shop/evening-gowns.html" class="">
+                            <span>Evening Gowns</span>
+                        </a>
+                    </li>
+                    <li class="nav-category">
+                        <a href="http://shop.tadashishoji.com/bridal-suite.html" class="">
+                            <span>Bridal Suite</span>
+                        </a>
+                    </li>
+                    <li class="nav-category">
+                        <a href="http://shop.tadashishoji.com/plus-size-evening-shop.html" class="">
+                            <span>QUEEN (SIZES 14Q - 24Q)</span>
+                        </a>
+                    </li>
+                    <li class="nav-category">
+                        <a href="http://shop.tadashishoji.com/celebrities-in-tadashi-shoji.html" class="">
+                            <span>CELEBRITY PICKS</span>
+                        </a>
+                    </li>
+            <!--- test link
+                    
+                    <li class="nav-category-last special-offers">
+                        <a href="http://shop.tadashishoji.com/special-offers.html" class="">
+                            <span>SPECIAL OFFERS</span>
+                        </a>
+                    </li>
+
+            <li class="nav-main">
+                <a href="http://www.xampp.com/tadashishoji.com/shop.html">
+                    <span>Shop</span>
+                </a>
+                <ul>
+                    <li class="nav-main-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/evening-shop.html" class="">
+                            <span>EVENING SHOP</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/cocktail-dresses.html" class="">
+                            <span>Cocktail Dresses</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/evening-gowns.html" class="">
+                            <span>Evening Gowns</span>
+                        </a>
+                    </li>
+                    <li class="nav-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/bridal-suite.html" class="">
+                            <span>Bridal Suite</span>
+                        </a>
+                    </li>
+                    -->
+                    <!--- stories -->
+                    <!---
+                    <li class="nav-main-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/cocktail-dresses.html" class="">
+                            <span>STORIES</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/cocktail-dresses.html" class="">
+                            <span>Navy is the New Black</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/evening-gowns.html" class="">
+                            <span>Grecian Goddess</span>
+                        </a>
+                    </li>
+                    <li class="nav-sub-category">
+                        <a href="http://www.xampp.com/tadashishoji.com/shop/evening-gowns.html" class="">
+                            <span>Spring has Sprung</span>
+                        </a>
+                    </li>
+                   -->
+
+
+                </ul>            
+            </li>
+        </ul>
+    </div>
+</div>
+
+

@@ -1,0 +1,6 @@
+<div style="border-top: 1px dotted #777;border-bottom: 1px dotted #777;padding: 5px 10px;margin: 20px 0;">
+<?php foreach ($list as $item) : ?>
+	<a style="margin-right: 5px;" <?php echo $item['attributes'];?>>
+	<?php echo $this->escapeHtml($item['text']); ?></a>
+<?php endforeach; ?>
+</div>

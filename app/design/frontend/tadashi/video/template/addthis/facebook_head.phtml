@@ -1,0 +1,15 @@
+<?php
+/**
+ *  This is to add open graph information to the product detail view
+ */
+?>
+<?php
+        $_product = $this->getProduct();
+?>
+
+<meta property="og:site_name" content="Tadashi Shoji"/>
+<meta property="og:title" content="<?php echo $_product->getName() ?>"/>
+<meta property="og:image" content="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(120,180); ?>"/>
+<meta property="og:description" content="<?php echo $_product->getShortDescription(); ?>"/>
+<meta property="fb:admins" content="100003882020257" />
+<meta property="og:type" content="website" />

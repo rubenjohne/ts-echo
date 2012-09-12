@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>../skin/frontend/tadashi/couture/js/cufon-yui.js</script></action>
+            <action method="addJs"><script>../skin/frontend/tadashi/couture/js/Helvetica_35_Thin_400.font.js</script></action>
+            <action method="addJs"><script>jquery/jquery-1.6.4.min.js</script></action>
+            <!-- jquery ui specific -->
+            <action method="addJs"><script>jquery/jquery-ui.js</script></action>
+            <action method="addCss"><stylesheet>css/jquery-ui-1.8.21.custom.css</stylesheet></action>
+            <!-- end jquery ui specific -->
+            <!-- lightbox specific -->
+            <action method="addItem"><type>skin_js</type><script>js/lightbox.js</script></action>
+            <action method="addCss"><stylesheet>css/lightbox.css</stylesheet></action>
+            <!-- end lightbox specific -->
+        </reference>
+        <reference name="header">
+            <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+        <reference name="left">
+           <remove name="left.permanent.callout"/>
+            <remove name="left.newsletter"/>
+        </reference>
+        <reference name="right">
+            <remove name="catalog.compare.sidebar"/>
+            <remove name="right.permanent.callout"/>
+            <remove name="right.reports.product.viewed"/>
+            <remove name="wishlist_sidebar"/>
+        </reference>
+        <reference name="footer_links">
+            
+        </reference>
+    </default>
+
+	<!--- remove fan page button
+    <catalog_category_view>
+        <reference name="left">
+            <block type="core/template" name="left.fanpage" template="callouts/left_col.phtml">
+                <action method="setImgSrc"><src>images/media/fans-only.jpg</src></action>
+                <action method="setImgAlt" translate="alt" module="catalog"><alt>Special Offers Fans Only Page.</alt></action>
+                <action method="setLinkUrl"><url>catalog/category/view/id/39</url></action>
+            </block>
+        </reference>        
+    </catalog_category_view>
+    -->   
+	
+
+    <catalog_product_view>
+        <reference name="head">
+            <block type="catalog/product_view_media" name="facebook.opengraph" template="addthis/facebook_head.phtml"/>
+        </reference>
+        <reference name="content">
+            <block type="reports/product_viewed" name="reports.product.viewed" template="reports/product_viewed.phtml" />
+            <reference name="product.info.options.wrapper" >
+                    <block type="catalog/product_list_related" before="-" name="catalog.product.view.related" template="catalog/product/list/related.phtml"/>
+            </reference>
+        </reference>
+        <remove name="product.info.options.wrapper.bottom"/>
+        <reference name="right">
+            <remove name="catalog.compare.sidebar"/>
+            <remove name="catalog.product.related"/>
+        </reference>
+    </catalog_product_view>
+
+    <checkout_cart_index>
+        <reference name="content">
+            <remove name="checkout.cart.shipping"/>
+        </reference>
+    </checkout_cart_index>
+
+    <catalogsearch_result_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>		
+		<remove name="right"/>
+    </catalogsearch_result_index>
+
+    <catalogsearch_advanced_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+		<remove name="right"/>
+    </catalogsearch_advanced_index>
+
+    <catalogsearch_advanced_result>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+		<remove name="right"/>
+    </catalogsearch_advanced_result>
+
+    <catalogsearch_term_popular>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+		<remove name="right"/>
+    </catalogsearch_term_popular>
+
+    <catalog_seo_sitemap_category>
+        <reference name="seo.sitemap.links">
+            <action method="removeLinkByUrl" translate="label title" module="catalog"><url helper="catalog/map/getProductUrl"/></action>
+            <action method="addLink" translate="label title" module="catalog"><label>Products Site map</label><url helper="catalog/map/getProductUrl"/><title>Products Sitemap</title></action>
+        </reference>
+    </catalog_seo_sitemap_category>
+
+    <checkout_onepage_success translate="label">
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+    </checkout_onepage_success>
+    
+   <contacts_index_index translate="label">
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <remove name="right"/>
+   </contacts_index_index>
+
+
+    <customer_account>
+        <reference name="customer_account_navigation" >
+            <remove name="billing_agreements"/>
+        </reference>
+        <reference name="left">
+            <remove name="cart_sidebar"/>
+        </reference>
+    </customer_account>
+
+     <wishlist_index_index>
+         <reference name="left">
+             <remove name="cart_sidebar"/>
+         </reference>
+     </wishlist_index_index>
+
+
+    <review_product_list>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <remove name="product.info"/>
+                <block type="core/template" name="product.info.other" as="other" template="review/product/view/other.phtml"/>
+                <block type="review/product_view_list" name="product.info.product_additional_data" as="product_additional_data" template="review/product/view/list.phtml">
+                    <block type="review/form" name="product.review.form" as="review_form">
+                        <block type="page/html_wrapper" name="product.review.form.fields.before" as="form_fields_before" translate="label">
+                            <label>Review Form Fields Before</label>
+                            <action method="setMayBeInvisible"><value>1</value></action>
+                        </block>
+                    </block>
+                </block>
+        </reference>
+    </review_product_list>
+
+
+</layout>

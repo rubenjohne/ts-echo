@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+<!--
+	Popup menu
+-->
+  <default>
+    <reference name="head">
+      <action method="addJs"><script>jquery/jquery.easing.1.3.js</script></action>
+      <action method="addCss"><stylesheet>css/auit/toolbar/styles_tabs.css</stylesheet></action>
+      <action method="addCss"><stylesheet>css/auit/toolbar/styles_bar.css</stylesheet></action>
+      <action method="addJs"><script>auit/toolbar/toolbar.js</script></action>
+      <action method="addJs"><script>auit/toolbar/socialcount.js</script></action>
+      <block type="core/template" name="auit_js_extern" as="auit_js_extern" template="auit/toolbar/js_extern.phtml" />
+    </reference>
+    <reference name="top.container">
+        <block type="auit_toolbar/tab" name="auit_toolbar_tab" as="auit_toolbar_tab" template="auit/toolbar/tab.phtml" >
+            <action method="addTab" translate="title" ><alias>translator</alias><title>Open the Translator</title><text>Translator</text><block>core/template</block><template>auit/toolbar/translator.phtml</template></action>
+            <action method="addTab" translate="title" ><alias>share</alias><title>Share this page</title><text>Share</text><block>auit_toolbar/tab_share</block><template>auit/toolbar/share.phtml</template></action>
+            <action method="addTab" translate="title" ><alias>feedback</alias><title>Give a Feedback</title><text>Feedback</text><block>core/template</block><template>auit/toolbar/feedback.phtml</template></action>
+        </block>
+    </reference>
+  </default>
+<!--
+	Social toolbar for product list
+	you must add 
+	
+	<?php if ( ($child = $this->getChild('auit_toolbar_social_toolbar')) ) : ?>
+             <?php echo $child->setProduct($_product)->toHtml();?>
+    <?php endif;?>
+	
+	to your template/catalog/product/list.phtml
+-->
+
+	<catalog_category_layered>
+		<reference name="product_list">
+			<block type="auit_toolbar/social_toolbar" name="auit_toolbar_social_toolbar.layered" as="auit_toolbar_social_toolbar" template="auit/toolbar/social/toolbar.phtml">
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.review" template="auit/toolbar/social/product/review.phtml"/>
+				<!-- 
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.xing" template="auit/toolbar/social/social/xing.phtml"/>
+				 -->
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.twitter" template="auit/toolbar/social/social/twitter.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.fb" template="auit/toolbar/social/social/facebook.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.google" template="auit/toolbar/social/social/google.phtml"/>
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.wishlist" template="auit/toolbar/social/product/wishlist.phtml" ifconfig="wishlist/general/active"/>
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.compare" template="auit/toolbar/social/product/compare.phtml"/>
+			</block>
+		</reference>
+	</catalog_category_layered>
+	<catalog_category_default>
+		<reference name="product_list">
+			<block type="auit_toolbar/social_toolbar" name="auit_toolbar_social_toolbar.category" as="auit_toolbar_social_toolbar" template="auit/toolbar/social/toolbar.phtml">
+			<!-- 
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.wishlist" template="auit/toolbar/social/product/wishlist.phtml" ifconfig="wishlist/general/active"/>
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.compare" template="auit/toolbar/social/product/compare.phtml"/>
+				 -->
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.review" template="auit/toolbar/social/product/review.phtml"/>
+				<!-- 
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.xing" template="auit/toolbar/social/social/xing.phtml"/>
+				 -->
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.twitter" template="auit/toolbar/social/social/twitter.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.fb" template="auit/toolbar/social/social/facebook.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.google" template="auit/toolbar/social/social/google.phtml"/>
+			</block>
+		</reference>
+	</catalog_category_default>
+ 
+	<catalog_product_view>
+		<reference name="alert.urls">
+			<block type="auit_toolbar/social_toolbar" name="auit_toolbar_social_toolbar.product" as="auit_toolbar_social_toolbar" template="auit/toolbar/social/toolbar.phtml">
+                            <!--
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.wishlist" template="auit/toolbar/social/product/wishlist.phtml" ifconfig="wishlist/general/active"/>
+				<block type="auit_toolbar/social_toolbar_product" name="auit_toolbar_social_toolbar.compare" template="auit/toolbar/social/product/compare.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.xing" template="auit/toolbar/social/social/xing.phtml"/>
+                             -->
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.twitter" template="auit/toolbar/social/social/twitter.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.fb" template="auit/toolbar/social/social/facebook.phtml"/>
+				<block type="auit_toolbar/social_toolbar_social" name="auit_toolbar_social_toolbar.google" template="auit/toolbar/social/social/google.phtml"/>
+			</block>
+		</reference>
+	</catalog_product_view>
+ 
+
+</layout> 

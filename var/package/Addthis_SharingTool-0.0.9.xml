@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Addthis_SharingTool</name>
+    <version>0.0.9</version>
+    <stability>beta</stability>
+    <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>AddThis Sharing Tool</summary>
+    <description>AddThis helps users to share your product and drive viral traffic.</description>
+    <notes>Fixed minor bugs.</notes>
+    <authors><author><name>AddThis</name><user>AddThisTeam</user><email>plugins@addthis.com</email></author></authors>
+    <date>2012-03-21</date>
+    <time>09:43:12</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="AddThis_SharingTool.xml" hash="40c4518a253bec346ad54824bdfef229"/></dir></target><target name="magecommunity"><dir name="AddThis"><dir name="SharingTool"><dir name="Block"><file name="Share.php" hash="8b08fcbf923debe17d02de227f579cdf"/></dir><dir name="Helper"><file name="Data.php" hash="d78c69dd706b97e39ef4c856c3c9d938"/></dir><dir name="Model"><file name="Observer.php" hash="5c9b5d0935bfbe2bddda81be9bfbee77"/><dir name="Source"><file name="Buttons.php" hash="a32ef7f14fc32626644758ba50ade883"/><file name="Languages.php" hash="c2527e95cfc81de57230fc41413da30e"/><file name="Menuhover.php" hash="403712eca479672709c8d400c3e8fb71"/><file name="Uihover.php" hash="619d9e5d96f15da367af4096ab448f5a"/></dir></dir><dir name="etc"><file name="config.xml" hash="c3f51e3b181055c5886b09b9a698c81c"/><file name="system.xml" hash="32e3be90a5d1d572998e1ca8779cf321"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="addthis"><dir name="sharingtool"><file name="share.phtml" hash="b16c17100585fc5fb7c4d76459471bc7"/></dir></dir></dir><dir name="layout"><file name="sharingtool.xml" hash="c3408376e653249f8c26c64a65190877"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

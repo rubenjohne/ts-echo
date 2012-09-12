@@ -1,0 +1,67 @@
+@import url("reset.css");
+
+		body {
+			font-family: Helvetica, Arial, sans-serif;	
+			font-size:15px;
+			font-weight:500;
+			color:#404040;
+		}
+		
+		#likedbox {
+			background-image:url(../images/liked_bg.jpg);
+			width:520px;
+			height:680px;
+			position:relative;
+		}
+		
+		#likedbox span .code {
+			font-style:italic;	
+			color:#358dc5;
+			text-decoration:none;
+		}
+		
+		#likedbox span a.code:hover {
+			color:#2372a4;
+		}
+		
+		
+		#likedbox span sup {
+			font-size:xx-small; vertical-align:top;
+		}
+		
+		#likedbox #shopLink {
+			position:absolute;
+			top:550px;	
+			left:165px;			
+			text-decoration:none;
+			color:#358dc5;
+		}
+		
+		#likedbox #shopLink:hover {
+			color:#2372a4;	
+		}
+		
+		
+		#promodates {
+			position:absolute;
+			top:350px;	
+			left:131px;
+		}
+		
+		#promocode {
+			position:absolute;
+			top:425px;	
+			left:130px;			
+		}
+
+		#promodiscount {
+			position:absolute;
+			top:450px;	
+			left:93px;			
+		}
+
+		#promocategory {
+			position:absolute;
+			top:475px;	
+			left:129px;			
+		}

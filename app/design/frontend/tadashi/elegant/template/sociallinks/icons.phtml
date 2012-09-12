@@ -1,0 +1,9 @@
+<div style="border-top: 1px dotted #777;border-bottom: 1px dotted
+#777;padding: 5px 10px;margin: 20px 0;">
+<?php foreach ($list as $item) : ?>
+	<a style="margin-right: 5px;" <?php echo $item['attributes'];?>>
+		<img src="<?php echo $item['image']; ?>" title="<?php echo$this->escapeHtml($item['text']); ?>" border="0" />
+	</a>
+<?php endforeach; ?>
+</div>
+This

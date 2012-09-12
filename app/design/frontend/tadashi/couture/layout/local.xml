@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>../skin/frontend/tadashi/couture/js/cufon-yui.js</script></action>
+            <action method="addJs"><script>../skin/frontend/tadashi/couture/js/Helvetica_35_Thin_400.font.js</script></action>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+        <reference name="left">
+            <remove name="left.permanent.callout"/>
+            <remove name="left.newsletter"/>
+        </reference>
+        <reference name="right">
+            <remove name="right.permanent.callout"/>
+            <remove name="right.reports.product.viewed"/>
+        </reference>
+    </default>
+
+    <catalog_product_view>
+        <reference name="content">
+            <block type="reports/product_viewed" name="reports.product.viewed" template="reports/product_viewed.phtml" />
+        </reference>
+        <reference name="product.info.options.wrapper.bottom">
+            <action method="unsetChild"><block>product.info.addto</block></action>
+        </reference>
+    </catalog_product_view>
+
+    <checkout_cart_index>
+        <reference name="content">
+            <remove name="checkout.cart.coupon"/>
+            <remove name="checkout.cart.shipping"/>
+        </reference>
+    </checkout_cart_index>
+
+    <catalogsearch_result_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+    </catalogsearch_result_index>
+
+    <catalogsearch_advanced_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+    </catalogsearch_advanced_index>
+
+    <catalogsearch_advanced_result>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+    </catalogsearch_advanced_result>
+
+    <catalogsearch_term_popular>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+    </catalogsearch_term_popular>
+
+    <customer_account>
+        <reference name="customer_account_navigation" >
+            <remove name="billing_agreements"/>
+        </reference>
+    </customer_account>
+
+</layout>

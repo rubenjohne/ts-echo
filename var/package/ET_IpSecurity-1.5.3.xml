@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>ET_IpSecurity</name>
+    <version>1.5.3</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/afl-3.0.php">AFL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Extension allows to restrict access to website for visitors by IP, IP mask or IP range. Also allows to turn off frontend during maintenance operations.</summary>
+    <description>Extension allows to restrict access to website for visitors by IP, IP mask or IP range. 
+When blocking rule is applied user is redirected to selected CMS page or blank page. Also extension can notify website owner about blocked visitor by email.
+
+Second function: Allows to turn off frontend during maintenance operations.</description>
+    <notes>stable release</notes>
+    <authors><author><name>Jurij</name><user>auto-converted</user><email>support@etwebsolutions.com</email></author><author><name>Andrej</name><user>auto-converted</user><email>support@etwebsolutions.com</email></author></authors>
+    <date>2011-06-07</date>
+    <time>05:39:17</time>
+    <contents><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="et_ipsecurity.xml" hash="3e677b0e6fffcfb90d1d03dd7bc8daa8"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><file name="et_ipsecurity.html" hash="2b67f7f1bc21e003da6246fe76462af4"/><file name="et_ipsecurity_admin.html" hash="2b67f7f1bc21e003da6246fe76462af4"/></dir></dir><file name="ET_IpSecurity.csv" hash="26e22ba736a937422cfc1755670e71a8"/></dir><dir name="ru_RU"><dir name="template"><dir name="email"><file name="et_ipsecurity.html" hash="a6f731a6903375bfc06edc6a31d67865"/><file name="et_ipsecurity_admin.html" hash="5961f9ae7d71f843d96d70c18c223222"/></dir></dir><file name="ET_IpSecurity.csv" hash="7f1e9f9b92e96f45fc45b13d0ca4e5e6"/></dir></target><target name="magecommunity"><dir name="ET"><dir name="IpSecurity"><dir name="Block"><dir name="Adminhtml"><dir name="Log"><file name="Grid.php" hash="baef872daeaa6a195b4bab090244b16f"/></dir><file name="Log.php" hash="17f11639de5af08019be9577fd01e733"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="LogController.php" hash="cfc12c6a05fcb0486bb9f3b4c2eae4d0"/></dir></dir><dir name="etc"><file name="config.xml" hash="7899e48569aa5d629179c9b1f192b1a6"/><file name="system.xml" hash="462b9b4d2e802a63cdeaca5448b6bc47"/></dir><dir name="Helper"><file name="Data.php" hash="08c557cd26157c317c1049d5f1366eab"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Ipsecuritylog"><file name="Collection.php" hash="929fd786020e26b87f900caf0f2996f1"/></dir><file name="Ipsecuritylog.php" hash="4ec2037e5a52eaa4278ddd7ad2929dfc"/></dir><file name="Ipsecuritylog.php" hash="bb8a6ad3b612c46ef8b2fa36d2fac709"/><file name="Observer.php" hash="54243c67cd6b36e5b2fe9a5addaacfd7"/></dir><dir name="sql"><dir name="ipsecurity_setup"><file name="mysql4-install-1.5.php" hash="c2524c78dbb7db294d53983ca588c5bb"/></dir></dir></dir><file name="ET_IpSecurity_ChangeLog.txt" hash="78b7fbe5ad986b7c39a28e7b72ed9927"/><file name="ET_IpSecurity_Description.txt" hash="fc3b3f0f66c6cd3964c564212f809d0a"/><file name="ET_IpSecurity_LICENSE.txt" hash="b799504264c23c11a941473d7a3e3ab7"/></dir></target><target name="mageetc"><dir name="modules"><file name="ET_IpSecurity.xml" hash="d191fe14ed772c4515519e1445af2229"/></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

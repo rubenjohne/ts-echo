@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><name>magiczoomplus/style.css</name></action>
+            <!--<action method="addJs"><name>magiczoomplus/options.js</name></action>-->
+            <action method="addItem"><type>skin_js</type><name>magiczoomplus/options.js</name></action>
+        </reference>
+    </default>
+    <magiczoomplus_adminhtml_settings_index>
+        <reference name="content">
+            <block type="magiczoomplus/adminhtml_settings" name="settings" />
+        </reference>
+    </magiczoomplus_adminhtml_settings_index>
+    <magiczoomplus_adminhtml_settings_edit>
+        <reference name="content">
+            <block type="magiczoomplus/adminhtml_settings_edit" name="edit" />
+        </reference>
+    </magiczoomplus_adminhtml_settings_edit>
+</layout>

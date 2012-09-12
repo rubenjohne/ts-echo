@@ -1,0 +1,23 @@
+.magiczoomplusEditForm {
+    display: block;
+    width: 50%;
+    min-width: 685px;
+}
+.magiczoomplusEditForm table {
+    margin: 0 auto;
+}
+.magiczoomplusEditForm td.label {
+    width: 200px;
+}
+.magiczoomplusEditForm td.label label{
+    width: 185px;
+}
+.magiczoomplusEditForm td.value {
+    width: 280px;
+}
+.fieldsetOpen {
+    background: url("../images/entry_edit_head_arrow_up.gif") no-repeat scroll 100% 50% transparent !important;
+}
+.fieldsetClose {
+    background: url("../images/entry_edit_head_arrow_down.gif") no-repeat scroll 100% 50% transparent !important;
+}
