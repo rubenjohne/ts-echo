@@ -138,13 +138,17 @@
                 <span class="product-sku-value"><?php echo $_product->getSku() ?></span>
             </div>
             
+            <!--- check products current category  -->
+            <?php if (!in_array('43', $_product->getCategoryIds())): ?>
 
-            <!--- sizing info -->
-            <div class="sizing-info">
-                <p>*Our dresses tend to run large. If your are unfamiliar with our sizing, we
-                    suggest you refer to our <a href="#" onclick="showSizeChart();" title="Tadashi Shoji Size Guide">Sizing Guide</a> to find your best fit.
-                </p>
-            </div>
+                <!--- sizing info -->
+                <div class="sizing-info">
+                    <p>*Our dresses tend to run large. If your are unfamiliar with our sizing, we
+                        suggest you refer to our <a href="#" onclick="showSizeChart();" title="Tadashi Shoji Size Guide">Sizing Guide</a> to find your best fit.
+                    </p>
+                </div>
+
+            <?php endif; ?>
 
 
             <div class="size-chart">
@@ -153,6 +157,7 @@
                     <a href="<?php echo $this->getSkinUrl('images/sizechart.jpg')?>" rel="lightbox" title="Tadashi Shoji Size Guide">Sizing Guide</a>
                 -->
             </div>
+
 
             <!--- new size chart jquery tabbed -->
             <div id="dialog">

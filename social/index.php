@@ -28,7 +28,9 @@ $locale = $signed_request["user"]["locale"];
 
 if ($like_status) { ?>
 	
-    <img src="images/LandingPage_NoPromo.jpg" alt="Promo"/>
+ 	<a href="http://shop.tadashishoji.com/special-offers.html" target="_blank">
+	    <img src="images/AppLandingPage.jpg" alt="Fans Only"/>
+    </a>    
     <!---
     <div id="likedbox">
 		<span id="promodates">FRIDAY, JUNE 22<sup>ST</sup> - FRIDAY, JULY 6<sup>TH</sup></span>  

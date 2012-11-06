@@ -52,11 +52,14 @@
 
 
 
-<!--- this is for the image banner in the category page maintenance
+<!--- this is for the image banner in the category page maintenance -->
 <?php if($_imgUrl): ?>
-    <?php echo $_imgHtml ?>
+    <!--- homecoming banner url added  -->
+    <a href="<?php echo(Mage::getBaseUrl() . "homecoming-landing") ?>" class="">
+        <?php echo $_imgHtml ?>
+    </a>
 <?php endif; ?>
--->
+
 
 
 <?php if($_description=$this->getCurrentCategory()->getDescription()): ?>

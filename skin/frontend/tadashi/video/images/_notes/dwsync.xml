@@ -48,7 +48,7 @@
 <file name="left-fade.png" server="ftp.tadashidev.simple-helix.net/public_html/tadashidev.simple-helix.net/" local="129776269856970024" remote="129776449200000000" />
 <file name="btn_remove.gif" server="ftp.tadashidev.simple-helix.net/public_html/tadashidev.simple-helix.net/" local="129779680012071202" remote="129779760000000000" />
 <file name="opc-ajax-loader.gif" server="shop.tadashishoji.com/public_html/" local="129782169216246220" remote="129782241600000000" />
-<file name="sizechart.jpg" server="shop.tadashishoji.com/public_html/" local="129786395760000000" remote="129786534000000000" />
+<file name="sizechart.jpg" server="shop.tadashishoji.com/public_html/" local="129935991570017765" remote="129936241800000000" />
 <file name="i_asc_arrow.gif" server="shop.tadashishoji.com/public_html/" local="129812310143434327" remote="129812417400000000" />
 <file name="i_desc_arrow.gif" server="shop.tadashishoji.com/public_html/" local="129812310788590501" remote="129812417400000000" />
 <file name="bridal-bg.jpg" server="shop.tadashishoji.com/public_html/" local="129815948240826488" remote="129817781400000000" />
@@ -79,4 +79,10 @@
 <file name="LaborDayLandingPage.png" server="shop.tadashishoji.com/public_html/" local="129909239059837607" remote="129909310800000000" />
 <file name="LaborDayLandinPage.jpg" server="shop.tadashishoji.com/public_html/" local="129909198651033725" remote="129909288000000000" />
 <file name="Invisible.gif" server="shop.tadashishoji.com/public_html/" local="129909867082554783" remote="129909944400000000" />
+<file name="HomecomingTeaser.jpg" server="shop.tadashishoji.com/public_html/" local="129927219000000000" remote="129927296400000000" />
+<file name="NailArtLandingPage.jpg" server="shop.tadashishoji.com/public_html/" local="129948942691125938" remote="129949061400000000" />
+<file name="NailArtText.png" server="shop.tadashishoji.com/public_html/" local="129948981237018398" remote="129949061400000000" />
+<file name="HolidayText.png" server="shop.tadashishoji.com/public_html/" local="129960987517097879" remote="129961060800000000" />
+<file name="HolidayLandingPage.jpg" server="shop.tadashishoji.com/public_html/" local="129961153670431568" remote="129961264800000000" />
+<file name="transparent.gif" server="shop.tadashishoji.com/public_html/" local="129961238458043465" remote="129961312200000000" />
 </dwsync>

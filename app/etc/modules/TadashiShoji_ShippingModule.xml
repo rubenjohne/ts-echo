@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TadashiShoji_ShippingModule>
+            <active>true</active>
+            <codePool>local</codePool>
+        </TadashiShoji_ShippingModule>
+    </modules>
+</config>

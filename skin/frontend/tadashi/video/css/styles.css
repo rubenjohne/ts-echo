@@ -92,6 +92,7 @@ ul,ol         { list-style:none; }
 .catalog-category-view .col-left {  padding: 0 14px; width: 200px; height: 1400px;}
 .catalog-category-view .main { margin: 0px; border-left: 1px solid #E6E6E6;}
 .catalog-category-view .wrapper { /*background: url("../images/lines-transparent.png") repeat-x scroll left 152px #FFFFFF; */}
+
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
 
@@ -127,6 +128,11 @@ ul,ol         { list-style:none; }
 .category-bridal-suite .page-title h2 { color:#BF9796; font-size: 70px; font-style: normal; letter-spacing:0; }
 .category-bridal-suite .wrapper { background: url("../images/bridal-bg.jpg") repeat-x scroll center 152px #FFFFFF; }
 .category-bridal-suite .main { background: #FFFFFF;}
+
+
+/* Homecoming Selects Category Page ================================================================== */
+.category-homecoming-selects .category-title { display:none; border:none;}
+
 
 
 /* ======================================================================================= */
@@ -511,7 +517,7 @@ tr.summary-details-excluded { font-style:italic; }
 #nav .nav-main { padding-left: 8px;}
 #nav .nav-main .nav-main-sub { width: 230px;}
 #nav .nav-main a { cursor:none; }
-#nav .nav-main a span { width: 210px;}
+#nav .nav-main a span { /*width: 210px;*/ margin-right:20px;}
 #nav .nav-main a:hover { color: #FFFFFF;}
 #nav li.nav-main.over a, #nav  li.nav-main active a { color:#FFFFFF; }
 #nav .nav-main-category a span { border-bottom: 1px solid #FFFFFF; padding: 10px 0; }
@@ -519,9 +525,12 @@ tr.summary-details-excluded { font-style:italic; }
 #nav .nav-category-last a span { padding-top: 10px; width:210px; margin-bottom: 0px;}
 #nav .nav-category-last { margin-bottom: 1px; padding: 0px; }
 #nav .nav-sub-category a span, #nav .nav-sub-category-last a span { text-transform: capitalize;}
+/* Special Offers */
 #nav .special-offers a  { color:#E00000 !important; }
 #nav .special-offers a:hover { color:#A80000 !important;  }
 
+/* Homecoming Selects */
+#nav li.homecoming-selects a:hover { color:#E8AB05;}
 
 .nav-container { height: 30px; background:url(../images/nav_bg.png) repeat-x #ffffff; }
 #nav {position:relative; padding:6px 0 0px 6px; margin:0; font-size:13px; border-radius:3px; -moz-border-radius:3px; }
@@ -956,7 +965,7 @@ tr.summary-details-excluded { font-style:italic; }
 .product-view .product-shop .price-box{ float:right; }
 .product-view .product-shop .price-box .price { color:595959; font-size:16px; }
 .product-view .product-shop .price-box .old-price { display: none; }
-.product-view .product-shop .price-box .special-price { float:left; font-weight: normal; font-style: italic; color: #828282; }
+.product-view .product-shop .price-box .special-price { float:left; font-weight: normal; font-style: italic; color: #828282;  font-size:14px;}
 .product-view .product-shop .price-box .special-price .price-label { font-weight: normal; float:left; margin-right:5px;}
 .product-view .product-shop .price-box .special-price .price { font-weight: normal; color: #828282; float:right; }
 .product-view .product-shop .ratings .rating-box { float:left; margin:  3px 60px 0 0;}
@@ -1079,16 +1088,18 @@ tr.summary-details-excluded { font-style:italic; }
 .advanced-search-summary {}
 
 /* CMS Home Page */
-.cms-home {  background-image:url(../images/fall2012.jpg); background-attachment:fixed; background-position: center bottom; background-color:#730101; background-repeat:no-repeat; background-size:cover; }
+.cms-home {  background-image:url(../images/HolidayLandingPage.jpg); background-attachment:fixed; background-position: center center; background-color:#e7e4d8; background-repeat:no-repeat; background-size:cover; }
 .cms-home .subtitle {}
 .cms-home > .wrapper { min-height: 100%; min-width:100%; width:100%;height:auto;  }
 .cms-home > .wrapper > .page { min-height: 100%;  }
 .cms-index-index .subtitle { display:none;}
 .cms-home .footer-container { position:fixed; border: none;}
+.cms-home  .main { text-align:center; vertical-align:central;}
+.cms-home .col-main .std { height:100%;}
 /* video background code */
 object { z-index: -99; position:absolute; top:0; left:0; }
 
-#home-page-fall-text { top: 200px; left:160px; position:relative;}
+#home-page-fall-text { position:fixed; top:50%; left:50%; margin-top:-200px; margin-left:-380px; height:400px; width:760px; display:block; }
 
 .cms-home .wrapper {  }
 
@@ -1122,8 +1133,19 @@ object { z-index: -99; position:absolute; top:0; left:0; }
 /* CMS About Us */
 .cms-about-tadashi-shoji .col-main { text-align:justify; line-height: 1.2em;}
 
-/* CMS About Us */
+/* CMS Customer Service */
 .cms-customer-service .col-main { text-align:justify;}
+.cms-customer-service table, th, td { border: 1px solid #dddddd; border-collapse:separate; } 
+
+/* CMS Homecoming Landing */
+.cms-homecoming-landing #homecoming-banner { margin:0 auto; width:634px;}
+.cms-homecoming-landing #homecoming-banner img { }
+.cms-homecoming-landing p#homecoming-disclaimer { margin:40px 0 10px 0; font-size:9px; color:#A4A4A4; text-align:justify;}
+.cms-homecoming-landing p#homecoming-disclaimer a { text-decoration:underline; color:#A4A4A4;}
+
+/* CMS Official Rules */
+.cms-official-rules p { margin:8px 0; font-size:10px; text-align:justify;}
+.cms-official-rules .official-rules-title { text-align:center;}
 
 /* Sitemap */
 .page-sitemap .links { text-align:right; margin:0 8px -22px 0; }
