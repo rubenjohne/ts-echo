@@ -71,6 +71,12 @@ ul,ol         { list-style:none; }
 .fright{ float:right;}
 .aligncenter{ text-align:center;}
 
+
+/* Custom  - Ruben */
+.note { font-size:11px; color:#ff0000; font-style:italic; }
+.catalog-product-view .note { position:absolute; top:580px; right:20px;}
+.cart .note { padding-top:10px; clear:both;}
+
 /* ======================================================================================= */
 
 
@@ -983,7 +989,7 @@ tr.summary-details-excluded { font-style:italic; }
 .product-view .product-shop .add-to-links { position: absolute; top: 195px; left: 0px; width: 200px;}
 .product-view .product-shop .add-to-links .separator { display: none;}
 .product-view .product-shop .add-to-links .link-compare { }
-.product-view .product-shop .addthis_toolbox { padding: 0px; position: absolute; top: 600px;}
+.product-view .product-shop .addthis_toolbox { padding: 0px; position: absolute; top: 610px;}
 .product-view .product-shop .addthis_toolbox a.addthis_button_facebook_like { }
 .product-view .product-shop .addthis_toolbox a.addthis_button_tweet { }
 .product-view .product-shop .addthis_toolbox a.addthis_button_google_plusone { }
@@ -1088,7 +1094,7 @@ tr.summary-details-excluded { font-style:italic; }
 .advanced-search-summary {}
 
 /* CMS Home Page */
-.cms-home {  background-image:url(../images/HolidayLandingPage.jpg); background-attachment:fixed; background-position: center center; background-color:#e7e4d8; background-repeat:no-repeat; background-size:cover; }
+.cms-home {  background-image:url(../images/Holiday_Guide_Landing.jpg); background-attachment:fixed; background-position: center center; background-color:#99b2e4; background-repeat:no-repeat; background-size:cover; }
 .cms-home .subtitle {}
 .cms-home > .wrapper { min-height: 100%; min-width:100%; width:100%;height:auto;  }
 .cms-home > .wrapper > .page { min-height: 100%;  }
@@ -1099,7 +1105,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* video background code */
 object { z-index: -99; position:absolute; top:0; left:0; }
 
-#home-page-fall-text { position:fixed; top:50%; left:50%; margin-top:-200px; margin-left:-380px; height:400px; width:760px; display:block; }
+#home-page-fall-text { position:fixed; top:50%; left:50%; margin-top:-250px; margin-left:-380px; height:500px; width:760px; display:block; }
 
 .cms-home .wrapper {  }
 
@@ -1136,6 +1142,7 @@ object { z-index: -99; position:absolute; top:0; left:0; }
 /* CMS Customer Service */
 .cms-customer-service .col-main { text-align:justify;}
 .cms-customer-service table, th, td { border: 1px solid #dddddd; border-collapse:separate; } 
+.cms-customer-service .note { font-style:italic;}
 
 /* CMS Homecoming Landing */
 .cms-homecoming-landing #homecoming-banner { margin:0 auto; width:634px;}
