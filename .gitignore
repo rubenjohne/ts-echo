@@ -2,3 +2,5 @@
 /var/cache/*
 /var/cache/mage/*
 dwsync.xml
+var/cache/*
+var/*

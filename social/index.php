@@ -27,21 +27,19 @@ $locale = $signed_request["user"]["locale"];
 
 
 if ($like_status) { ?>
-	
- 	<a href="http://shop.tadashishoji.com/special-offers.html" target="_blank">
-	    <img src="images/AppLandingPage.jpg" alt="Fans Only"/>
-    </a>    
+ 	<a href="http://shop.tadashishoji.com" target="_blank">
+	    <img src="images/LandingPage_NoPromo.jpg" alt="Fans Only"/>
+    </a> 
     <!---
     <div id="likedbox">
-		<span id="promodates">FRIDAY, JUNE 22<sup>ST</sup> - FRIDAY, JULY 6<sup>TH</sup></span>  
-        <span id="promocode">ENTER CODE <span class="code">FB0622</span> AT CHECKOUT</span>  
+		<span id="promodates">THURSDAY, JANUARY 24<sup>TH</sup> - THURSDAY, FEBRUARY 7<sup>TH</sup></span>  
+        <span id="promocode">ENTER CODE <span class="code">FAN012013</span> AT CHECKOUT</span>  
         <span id="promodiscount">TO RECEIVE A 40% DISCOUNT* ON ALL STYLES</span>
-        <span id="promocategory">WITHIN THE <a href="http://shop.tadashishoji.com/special-offers.html" class="code" target="_blank">FANS ONLY</a> SECTION ON</span>
+        <span id="promocategory">WITHIN THE <a href="http://shop.tadashishoji.com/fans-only.html" class="code" target="_blank">FANS ONLY</a> SECTION ON</span>
         
         <a id="shopLink" href="http://shop.tadashishoji.com" target="_blank">SHOP.TADASHISHOJI.COM</a>
     </div>
-    -->
-
+	-->
 <?php }
 
 

@@ -54,12 +54,15 @@
 
 <!--- this is for the image banner in the category page maintenance -->
 <?php if($_imgUrl): ?>
-    <!--- homecoming banner url added  -->
-    <a href="<?php echo(Mage::getBaseUrl() . "homecoming-landing") ?>" class="">
+    <!--- fan only app banner url added  -->
+    <?php if($_category->getName() == 'Prom Dresses'): ?>
+	<a href="http://pinterest.com/pin/259871840970281739/" class="" target="_blank">
         <?php echo $_imgHtml ?>
     </a>
+    <?php else: ?>  
+        <?php echo $_imgHtml ?>	
+	<?php endif; ?>
 <?php endif; ?>
-
 
 
 <?php if($_description=$this->getCurrentCategory()->getDescription()): ?>

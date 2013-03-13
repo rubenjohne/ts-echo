@@ -184,8 +184,9 @@ class Mage_Sales_Model_Order_Pdf_Invoice extends Mage_Sales_Model_Order_Pdf_Abst
         // TOTAL
         $page->drawText(Mage::helper('sales')->__(number_format($source->getBaseGrandTotal(),2,'.',',')), 285, 84);
         // PAYMENT METHOD
-        $page->drawText(Mage::helper('sales')->__($source->getOrder()->getPayment()->getMethod()), 285, 69);
-
+        //$page->drawText(Mage::helper('sales')->__($source->getOrder()->getPayment()->getMethod()), 285, 69);
+        // Hard code Credit Card 
+        $page->drawText(Mage::helper('sales')->__('CREDIT CARD'), 285, 69);
 
     }
 }

@@ -56,6 +56,34 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
             </dd>
             <?php endforeach; ?>
         </dl>
+
+
+        <!--- holiday notes here 
+        <?php
+            $startDate = strtotime(date('2012-12-21'));
+            $endDate = strtotime(date('2012-12-26'));
+            $curDate = strtotime('now');
+
+            if ($curDate >= $startDate && $curDate <=  $endDate)
+            {
+        ?>
+                <p class="note">This style is expected to ship December 28th.</p>
+
+        <?php
+            }
+            elseif ($curDate > $endDate)
+            {
+        ?>
+                <p class="note">This style is expected to ship January 3rd.</p>
+
+        <?php
+            }
+        ?>
+       end holiday notes here  -->
+
+
+
+
         <?php endif;?>
         <!--- I added an edit button in here -->
         <?php if ($isVisibleProduct): ?>

@@ -143,7 +143,7 @@
 
                 <!--- sizing info -->
                 <div class="sizing-info">
-                    <p>*Our dresses tend to run large. If your are unfamiliar with our sizing, we
+                    <p>*Our dresses tend to run large. If you are unfamiliar with our sizing, we
                         suggest you refer to our <a href="#" onclick="showSizeChart();" title="Tadashi Shoji Size Guide">Sizing Guide</a> to find your best fit.
                     </p>
                 </div>
@@ -218,9 +218,31 @@
             <?php echo $this->getLayout()->createBlock('sharingtool/share')->setBlockId('addthis_sharetool')->toHtml(); ?>
             <!--- AddThis Button END -->
 
-            <!--- return policy text here  -->
-            <p class="return-policy">* Our online store accepts returns within 15 days of the delivery date.</p>
+            <!--- 
+            <?php
+                $startDate = strtotime(date('2012-12-21'));
+                $endDate = strtotime(date('2012-12-26'));
+                $curDate = strtotime('now');
 
+                if ($curDate >= $startDate && $curDate <=  $endDate)
+                {
+            ?>
+                    <p class="note">This style is expected to ship December 28th.</p>
+                    
+            <?php
+                }
+                elseif ($curDate > $endDate)
+                {
+            ?>
+                    <p class="note">This style is expected to ship January 3rd.</p>
+                    
+            <?php
+                }
+            ?>
+			-->
+            <!--- return policy text here  
+            <p class="return-policy">* Our online store accepts returns within 15 days of the delivery date.</p>
+			-->
         </div>
 
         <div class="product-img-box">
