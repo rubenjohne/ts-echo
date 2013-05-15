@@ -1,0 +1,1 @@
+<p><a href="http://www.xampp.com/tadashishoji.com/holiday-dress-guide.html"><img id="home-page-fall-text" src="{{skin url=images/transparent.gif}}" alt="tadashi shoji holiday dress guide" /></a></p>

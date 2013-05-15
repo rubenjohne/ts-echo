@@ -547,8 +547,6 @@ tr.summary-details-excluded { font-style:italic; }
 #nav .special-offers a:hover { color:#A80000 !important;  }
 
 
-/* Homecoming Selects */
-#nav li.homecoming-selects a:hover { color:#E8AB05;}
 
 .nav-container { height: 30px; background:url(../images/nav_bg.png) repeat-x #ffffff; z-index:9; }
 #nav {position:relative; padding:6px 0 0px 6px; margin:0; font-size:13px; border-radius:3px; -moz-border-radius:3px;z-index:9; }
@@ -565,7 +563,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* 1st Level */
 #nav li { float:left; }
 #nav li a { float:left; }
-#nav li a:hover { color:#ffffff; }
+#nav li a:hover { color:#ffb824; }
 #nav li:hover ul  { left: 0; z-index:999;}
 #nav li.over a,
 #nav li.active a { color:#ffb824; }
@@ -1106,23 +1104,138 @@ tr.summary-details-excluded { font-style:italic; }
 .advanced-search-amount {}
 .advanced-search-summary {}
 
-/* CMS Home Page */
-/*.cms-home {  background-image:url(../images/ColorCrush_LandingCropped.jpg); background-attachment:fixed; background-position: center center; background-color:#ffffff; background-repeat:no-repeat; background-size:cover; }*/
-.cms-home {background-image:url(../images/LittleLace_Landingz.gif); background-repeat:no-repeat; background-position:center 100px; background-attachment:fixed; background-size:1049px 629px;}
+/* CMS Home Page test */
+.cms-home { background-image:url(../images/SpringEventsLanding.jpg); background-attachment:fixed; background-position: center 115px; background-color:#ffffff; background-repeat:no-repeat; background-size:auto; } 
+/*..cms-home {background-image:url(../images/LittleLace_Landingz.gif); background-repeat:no-repeat; background-position:center 100px; background-attachment:fixed; background-size:1049px 629px;}*/
+.cms-home { background-color:#FFFFFF; }
 .cms-home .subtitle {}
 .cms-home > .wrapper { min-height: 100%; min-width:100%; width:100%;height:auto;  }
 .cms-home > .wrapper > .page { min-height: 100%;  }
 .cms-index-index .subtitle { display:none;}
-.cms-home .footer-container { position:fixed; border: none;}
+.cms-home .footer-container { position:fixed; border: none;  z-index:9;}
 .cms-home  .main { text-align:center; vertical-align:central;}
 .cms-home .col-main .std { height:100%;}
 /* video background code */
 object { z-index: -99; position:absolute; top:0; left:0; }
 
+
+/* 30th Anniversary related styles */
+
+  	#container {
+		width:960px;
+		height:560px;
+		margin:0 auto;	
+		position:relative;
+		padding-top:2px;
+	}
+	
+	
+
+	
+	#slideshow {
+		position:relative;	
+		z-index:1;
+	}
+	
+  /* pager */
+  .cycle-pager { 
+	  text-align: center; 
+	  width: 100%; 
+	  z-index: 500; 
+	  position: relative; 
+	  overflow: hidden;
+	  background-color:#000000;
+	  height:27px;
+	  display:none;
+  }
+  .cycle-pager span { 
+	  font-family: arial; 
+	  font-size: 30px; 
+	  display: inline-block; 
+	  color: #777; 
+	  cursor: pointer; 
+	  padding:0 3px;
+	  margin-top:-5px;
+  }
+  .cycle-pager span.cycle-pager-active { color: #FFFFFF;}
+  .cycle-pager > * { cursor: pointer;}
+  
+  
+  /* caption */
+  .cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+  
+  
+  /* overlay */
+  .cycle-overlay { 
+	  font-family: tahoma, arial;
+	  position: absolute; bottom: 0; width: 100%; z-index: 600;
+	  background: black; color: white; padding: 15px; opacity: .5;
+  }	
+  
+  .arrows {
+	text-indent:-9999px;  
+	display:block;
+	width:20px;
+	height:40px;
+	position:absolute;
+	top:260px;
+	z-index:5;
+	opacity:0.5;
+  }
+  
+  .arrows:hover {
+	opacity:1;
+  }
+  
+  #main_prev {
+	  background:url(../images/thirty/arrow_L.png) no-repeat transparent;
+	  left:5px;
+	  display:none;
+  }
+
+
+  #main_next {
+	  background:url(../images/thirty/arrow_R.png) no-repeat transparent;
+	  right:5px;
+  }
+  
+  #slide-text {
+	font-family:Helvetica, Arial, sans-serif;
+	position:absolute;
+	font-size:12px;
+	text-align:left;
+	z-index:99;
+	top:150px;
+	left:525px;		  
+	color:#88755f;
+  }
+  
+  #slide-text p {
+	margin:10px 0;  
+  }
+  
+  #slide-text p.follow-her {
+	margin-top:30px;  
+  }
+  #slide-text p.follow-her a {
+	text-decoration:none;
+	font-family:'Didot';
+	font-style:italic;
+	font-size:16px;
+	color:#777777;  
+  }
+  
+  #slide-text p.follow-her a:hover {
+	color:#735c3d;
+  }
+
+/* END 30 Anniversary related styles */
+
+
 /*
 #home-page-fall-text { position:fixed; top:50%; left:50%; margin-top:-150px; margin-left:-330px; height:300px; width:760px; display:block; }
 */
-#home-page-fall-text { position:fixed; top:50%; left:50%; margin-top:-300px; margin-left:-480px; height:600px; width:960px; display:block; z-index:1;}
+#invisible-image-link { position:fixed; top:50%; left:50%; margin-top:-300px; margin-left:-480px; height:600px; width:960px; display:block; z-index:1;}
 
 .cms-home .wrapper {  }
 

@@ -150,6 +150,19 @@
 
             <?php endif; ?>
 
+
+            <!--- if it's in the pinterest active -->
+            <?php if (in_array('60', $_product->getCategoryIds())): ?>
+                <a href="http://pinterest.com/tadashishoji/mothers-day-deal-pin-to-unlock-savings/" target="_blank">
+                    <img src="<?php echo $this->getSkinUrl('images/pinterest/pinterest.jpg')?>"  />
+                </a>
+            <?php elseif (in_array('61', $_product->getCategoryIds())): ?>
+                <a href="http://pinterest.com/tadashishoji/mothers-day-deal-pin-to-unlock-savings/" target="_blank">
+                    <img src="<?php echo $this->getSkinUrl('images/pinterest/pinterest_inactive.jpg')?>"  />
+                </a>
+            <?php endif; ?>
+
+
             <div class="size-chart">
                 <a href="#" onclick="showSizeChart();" title="Tadashi Shoji Size Guide">Sizing Guide</a>
                 <!--- lightbox size chart

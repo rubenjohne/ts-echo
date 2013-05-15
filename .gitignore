@@ -4,3 +4,4 @@
 dwsync.xml
 var/cache/*
 var/*
+var/cache/mage/*

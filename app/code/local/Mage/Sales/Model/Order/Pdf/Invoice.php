@@ -72,6 +72,17 @@ class Mage_Sales_Model_Order_Pdf_Invoice extends Mage_Sales_Model_Order_Pdf_Abst
             // create another copy of the invoice
             $page->drawText(Mage::helper('sales')->__('') . $invoice->getIncrementId(), 689, 571, 'UTF-8');
             
+            // start add comments here
+            $y_comment = 160;
+            $comments = $invoice->getCommentsCollection()->getItems();
+            foreach ($comments as $comment) {
+                //left side of the invoice
+                $page->drawText(Mage::helper('sales')->__('*') . $comment->getData('comment'), 0, $y_comment, 'UTF-8');
+                //right side of the invoice
+                $page->drawText(Mage::helper('sales')->__('*') . $comment->getData('comment'), 419, $y_comment, 'UTF-8');
+                $y_comment += 10;
+            }
+            // end add comments here
 
             /* Add table */
             //$page->setFillColor(new Zend_Pdf_Color_RGB(0.93, 0.92, 0.92));
