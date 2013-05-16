@@ -1285,6 +1285,12 @@ object { z-index: -99; position:absolute; top:0; left:0; }
 .cms-official-rules .official-rules-title { text-align:center;}
 .cms-official-rules .em { font-style:italic; }
 
+/* CMS Countries */
+.cms-countries .col-main { margin-bottom:20px;}
+.cms-countries .col-main p { margin-bottom:10px;}
+.cms-countries .col-main ul { display:block; width:320px; float:left;}
+
+
 /* Sitemap */
 .page-sitemap .links { text-align:right; margin:0 8px -22px 0; }
 .page-sitemap .links a { text-decoration:none; position:relative; }
