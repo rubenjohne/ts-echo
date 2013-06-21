@@ -1105,9 +1105,9 @@ tr.summary-details-excluded { font-style:italic; }
 .advanced-search-summary {}
 
 /* CMS Home Page test */
-.cms-home { background-image:url(../images/SpringEventsLanding.jpg); background-attachment:fixed; background-position: center 115px; background-color:#ffffff; background-repeat:no-repeat; background-size:auto; } 
-/*..cms-home {background-image:url(../images/LittleLace_Landingz.gif); background-repeat:no-repeat; background-position:center 100px; background-attachment:fixed; background-size:1049px 629px;}*/
-.cms-home { background-color:#FFFFFF; }
+/*.cms-home { background-image:url(../images/FirstLookFall_Landing.jpg); background-attachment:fixed; background-position: center 50px; background-color:#ffffff; background-repeat:no-repeat; background-size:cover; } */
+.cms-home {background-image:url(../images/FirstLookFall_Landing.jpg); background-repeat:no-repeat; background-position:center 135px; background-attachment:fixed; background-size:1049px 629px;}
+.cms-home { background-color:#f4f3f2; }
 .cms-home .subtitle {}
 .cms-home > .wrapper { min-height: 100%; min-width:100%; width:100%;height:auto;  }
 .cms-home > .wrapper > .page { min-height: 100%;  }
