@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_catalog_product_edit>           
+        <reference name="head">
+            <action method="addJs">
+                <!--checkbox input renderer-->
+                <name>aw_ascurl/ascurl.js</name>
+            </action>
+        </reference>
+        <reference name="product_tabs">                               
+            <action method="addTab">
+                <name>ascurl</name>
+                <block>ascurl/adminhtml_catalog_product_edit_tab_ascurl</block>
+            </action>
+        </reference>
+    </adminhtml_catalog_product_edit>
+</layout>
