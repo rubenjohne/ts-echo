@@ -3,7 +3,7 @@
     <modules>
         <AW_All>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>false</codePool>
         </AW_All>
     </modules>
 </config>
